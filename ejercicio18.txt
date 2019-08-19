@@ -1,0 +1,56 @@
+
+show database;
+create database pizzeria;
+use pizzeria;
+
+create table pedidos(
+  nro_pedido;
+  nombre;
+  tipo;
+  precio;
+  cantidad;
+  domicilio;
+  );
+
+drop table if exists pedidos;
+
+create table pedidos(
+  nro_pedido tinyint unsigned auto_incremet;
+  nombre varchar(8);
+  tipo varchar(20);
+  precio decimal(2,1);
+  cantidad tinyint unsigned;
+  domicilio varchar(50);
+  primary key (nro_pedido)
+  );
+  
+  exit;
+---------- Segundo Problema ----------
+
+drop table estadisticas;
+
+create table estadisticas(
+    ciudad varchar(50);
+    temperaturas int(3);
+    precipitaciones_media_anual int(3) unsigned;
+    );
+    
+ 
+drop table if exists gases;
+
+create table gases(
+    gas char;
+    temperatura_critica decimal(3,0);
+    presion_critica decimal(3,0) unsigned;
+);
+
+drop table cuentas;
+
+create table cuentas(
+    nro_cuenta int unsigned;
+    documento varchar(8) NOT NULL;
+    nombre varchar(50);
+    saldo_cuenta int;
+);
+
+exit;
