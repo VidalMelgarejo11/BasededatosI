@@ -1,0 +1,67 @@
+use tarea;
+
+
+drop table if exists agenda;
+
+
+create table agenda (
+
+	nombre varchar(20),
+  
+	domicilio varchar(30),
+ 
+	telefono varchar (11)
+
+	);
+
+
+SELECT * FROM tarea.agenda;
+
+
+insert into agenda (nombre,domicilio,telefono)
+	values ('Alberto Mores','Colon 123','4234567');
+insert into agenda (nombre,domicilio,telefono)
+	values ('Juan Torres','Avellaneda 135','4458787');
+
+
+
+show tables;
+
+
+describe agenda;
+
+exit;
+
+------------------ Segundo Problema ------------------
+
+use tarea;
+
+
+drop table if exists libros;
+
+
+create table libros(
+
+	titulo varchar(20),
+
+	autor varchar(30),
+
+	editorial varchar(15)
+
+	);
+
+
+SELECT * FROM tarea.libros;
+
+
+insert into libros (titulo,autor,editorial)
+	values ('Abajo','José Ayala','Planeta');
+show tables;
+describe libros;
+
+show tables;
+
+
+describe libros;
+
+exit;

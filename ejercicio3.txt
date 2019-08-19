@@ -1,0 +1,49 @@
+use tarea;
+
+
+drop table if exists agenda;
+
+
+create table agenda (
+
+	nombre varchar(20),
+   
+	domicilio varchar(30),
+   
+	telefono varchar (11)
+
+	);
+
+
+show tables;
+
+
+describe agenda;
+
+exit;
+
+---------------- Segundo Problema ----------------
+
+use tarea;
+
+
+drop table if exists libros;
+
+
+create table libros(
+
+	titulo varchar(20),
+
+	autor varchar(30),
+
+	editorial varchar(15)
+
+	);
+
+
+show tables;
+
+
+describe libros;
+
+exit;

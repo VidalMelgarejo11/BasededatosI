@@ -1,0 +1,142 @@
+use tarea;
+
+
+
+create table Agenda(
+
+	nombre varchar(20),
+
+	domicilio varchar(20),
+
+	telefono varchar(11)
+
+	);
+
+
+
+insert into Agenda(nombre,domicilio,telefono)
+	values ('Alberto Mores','Colon 123','4234567');
+insert into Agenda(nombre,domicilio,telefono)
+	values ('Juan Torres','Avellaneda 135','4458787');
+insert into Agenda(nombre,domicilio,telefono)
+	values ('Mariana Lopez','Urquiza 333','4545454');
+insert into Agenda(nombre,domicilio,telefono)
+	values ('Ferando Lopez','Urquiza 333','4545454');
+
+
+
+select * from tarea.Agenda;
+
+
+
+select * from tarea.Agenda 
+	where nombre='Juan Torres';
+
+select * from tarea.Agenda 
+	where domicilio='Colon 123';
+
+
+select *from tarea.Agenda 
+	where telefono='4545454';
+
+
+
+drop table Agenda;
+
+exit;
+
+---------------- Segundo Problema ----------------
+
+use tarea;
+
+
+
+create table libros(
+
+	titulo varchar(20),
+
+	autor varchar(30),
+
+	editorial varchar(15)
+
+	);
+
+
+
+insert into libros(titulo,autor,editorial) 
+	values ('El aleph','Borges','Planeta');
+
+insert into libros(titulo,autor,editorial) 
+	values ('Martin Fierro','Jose Hernandez','Emece');
+
+insert into libros(titulo,autor,editorial) 
+	values ('Aprenda PHP','Mario Molina','Emece');
+
+insert into libros(titulo,autor,editorial) 
+	values ('Cervantes','Borges','Paidos');
+
+
+select *from libros;
+
+
+select *from libros 
+	where autor='Borges';
+
+select *from libros 
+	where editorial='Emece';
+
+select *from libros 
+	where titulo='Martin Fierro';
+
+
+
+drop table libros;
+
+-------------- Tercer Problema --------------
+
+use tarea;
+
+
+
+create table articulos(
+
+	codigo integer,
+  
+	nombre varchar(20),
+  
+	descripcion varchar(30),
+  
+	precio float
+ );
+ 
+  
+
+insert into articulos (codigo, nombre, descripcion, precio)
+  
+	values (1,'impresora','Epson Stylus C45',400.80);
+ 
+insert into articulos (codigo, nombre, descripcion, precio)
+  
+	values (2,'impresora','Epson Stylus C85',500);
+ 
+insert into articulos (codigo, nombre, descripcion, precio)
+  
+	values (3,'monitor','Samsung 14',800);
+ 
+insert into articulos (codigo, nombre, descripcion, precio)
+  
+	values (4,'teclado','ingles Biswal',100);
+ 
+insert into articulos (codigo, nombre, descripcion, precio)
+  
+	values (5,'teclado','español Biswal',90);
+
+  
+  
+select *from articulos 
+	where nombre='impresora';
+  
+
+select codigo,descripcion,precio from articulos;
+
+exit;
