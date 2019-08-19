@@ -1,0 +1,25 @@
+-- Ejercicio 1
+create table peliculas(
+  codigo integer unsigned auto_increment,
+  titulo varchar(40) not null,
+  actor varchar(20),
+  duracion integer unsigned,
+  primary key(codigo)
+ );
+
+-- Ejercicio 2
+
+
+create table visitantes (
+nombre varchar (30),
+edad integer,
+sexo char,
+domicilio varchar (30),
+cuidad varchar (30),
+telefono varchar (11),
+monto float
+
+);
+
+select * from visitantes;
+
